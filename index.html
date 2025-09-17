@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Pokédex 4You</title>
+
+    <!--Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--darkMode -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      html, body, #root { height: 100%; }
+      body { margin: 0; }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(6px) scale(.98); }
+        to { opacity: 1; transform: none; }
+      }
+      .fade-up { animation: fadeUp .35s ease-out both; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
